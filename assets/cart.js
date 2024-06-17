@@ -249,3 +249,40 @@ if (!customElements.get('cart-note')) {
     }
   );
 }
+
+
+class ClearCartButton extends HTMLElement {
+  constructor() {
+    super();
+
+    this.addEventListener('click', async (event) => {
+      event.preventDefault();
+      this.disabled = true;
+      this.textContent = 'Clearing...';
+
+      try {
+        const response = await fetch('/cart/clear.js', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          }
+        });
+
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+
+        const data = await response.json();
+        console.log('Cart cleared', data);
+        location.reload();
+      } catch (error) {
+        console.error('Error:', error);
+        this.disabled = false;
+        this.textContent = 'Clear Cart';
+      }
+    });
+  }
+}
+
+customElements.define('clear-cart-button', ClearCartButton);

@@ -52,6 +52,8 @@
       <div class="cart__items" id="main-cart-items" data-id="{{ section.id }}">
         <div class="js-contents">
           {%- if cart != empty -%}
+            <clear-cart-button id="clear-cart-button" class="cart__items-clear button button--secondary">Clear Cart</clear-cart-button>
+
             <table class="cart-items">
               <caption class="visually-hidden">
                 {{ 'sections.cart.title' | t }}
