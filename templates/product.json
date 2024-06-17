@@ -44,6 +44,12 @@
           "settings": {
           }
         },
+        "extra_info_76g9KA": {
+          "type": "extra_info",
+          "settings": {
+            "extra_info_text": "<p><strong>Features and Benefits:<\/strong><\/p><ol><li><strong>High-Quality Materials<\/strong>: Made from premium [material], this product offers unmatched durability and longevity.<\/li><li><strong>Innovative Design<\/strong>: The sleek and modern design ensures that you stand out in any setting.<\/li><li><strong>Comfort and Convenience<\/strong>: Designed with your comfort in mind, this product features [specific comfort features].<\/li><li><strong>Versatility<\/strong>: Suitable for a wide range of activities, from casual outings to formal events.<\/li><li><strong>Easy Maintenance<\/strong>: Simple to clean and maintain, ensuring it remains in pristine condition for years to come.<\/li><\/ol><p><strong>Customer Testimonials:<\/strong><\/p><ul><li>\"I have been using this product for months now, and it still looks as good as new. The quality is outstanding!\" - [Customer Name]<\/li><li>\"This product has exceeded my expectations in every way. The design is beautiful, and it is incredibly comfortable.\" - [Customer Name]<\/li><li>\"I highly recommend this product to anyone looking for quality and style. It is worth every penny.\" - [Customer Name]<\/li><\/ul><p><strong>How to Use:<\/strong><\/p><ol><li><strong>Daily Use<\/strong>: Perfect for everyday use, providing you with the reliability and functionality you need.<\/li><li><strong>Special Occasions<\/strong>: Adds a touch of elegance and sophistication to any special event.<\/li><li><strong>Care Instructions<\/strong>: To maintain the product's quality, follow these care instructions: [specific care instructions].<\/li><\/ol><p><strong>Frequently Asked Questions:<\/strong><\/p><ul><li><strong>Q: What sizes are available?<\/strong><br\/>A: The [Product Name] is available in sizes [list of sizes].<\/li><li><strong>Q: Is there a warranty on this product?<\/strong><br\/>A: Yes, we offer a [warranty period] warranty on all our products.<\/li><li><strong>Q: Can I return the product if I am not satisfied?<\/strong><br\/>A: Yes, we offer a 30-day return policy for your convenience.<\/li><\/ul>"
+          }
+        },
         "share": {
           "type": "share",
           "settings": {
@@ -59,6 +65,7 @@
         "quantity_selector",
         "buy_buttons",
         "description",
+        "extra_info_76g9KA",
         "share"
       ],
       "settings": {
