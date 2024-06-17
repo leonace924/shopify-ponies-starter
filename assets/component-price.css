@@ -99,3 +99,8 @@
   text-transform: uppercase;
   color: rgba(var(--color-foreground), 0.7);
 }
+
+/* Change the price color on PDP page */
+.product__info-wrapper .price .price-item--regular {
+  color: red;
+}
