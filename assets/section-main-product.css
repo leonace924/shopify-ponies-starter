@@ -1476,3 +1476,41 @@ a.product__text {
     border: none;
   }
 }
+
+/* Product Extra Info Style */
+.product__extra__info {
+  margin-top: 2rem;
+  line-height: 1.5;
+  overflow: hidden;
+  max-height: 200px;
+  position: relative;
+}
+
+.product__extra__info::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background: linear-gradient(transparent, white);
+}
+
+.show-more {
+  all: unset;
+  text-decoration: underline;
+  margin: 0.5rem 0;
+  text-align: center;
+  cursor: pointer;
+  color: black;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.product__extra__info.expanded {
+  max-height: none;
+}
+
+.product__extra__info.expanded::after {
+  background: transparent;
+}

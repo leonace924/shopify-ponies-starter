@@ -192,9 +192,11 @@
                 {%- endif -%}
               {%- when 'extra_info' -%}
                 {%- if block.settings.extra_info_text != blank -%}
-                  <div class="product__extra__info rte" {{ block.shopify_attributes }}>
-                    {{ block.settings.extra_info_text }}
-                  </div>
+                  <product-extra-info>
+                    <div class="product__extra__info rte" {{ block.shopify_attributes }}>
+                      {{ block.settings.extra_info_text }}
+                    </div>
+                  </product-extra-info>
                 {%- endif -%}
               {%- when 'sku' -%}
                 <p

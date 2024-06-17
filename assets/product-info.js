@@ -105,3 +105,32 @@ if (!customElements.get('product-info')) {
     }
   );
 }
+
+customElements.define(
+  'product-extra-info',
+  class ProductExtraInfo extends HTMLElement {
+    constructor() {
+      super();
+
+      document.addEventListener('DOMContentLoaded', () => {
+        const extraInfo = this.querySelector('.product__extra__info');
+        if (extraInfo && extraInfo.scrollHeight > extraInfo.clientHeight) {
+          const showMoreBtn = document.createElement('button');
+          showMoreBtn.textContent = 'Show More';
+          showMoreBtn.classList.add('show-more');
+          extraInfo.after(showMoreBtn);
+
+          showMoreBtn.addEventListener('click', function() {
+            if (extraInfo.classList.contains('expanded')) {
+              extraInfo.classList.remove('expanded');
+              showMoreBtn.textContent = 'Show More';
+            } else {
+              extraInfo.classList.add('expanded');
+              showMoreBtn.textContent = 'Show Less';
+            }
+          });
+        }
+      });
+    }
+  }
+);
